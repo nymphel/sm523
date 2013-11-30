@@ -1,4 +1,4 @@
-package creational.abstractfactory;
+package creational.abstractfactory.product;
 
 public interface Window {
 	
