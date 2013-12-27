@@ -1,5 +1,6 @@
 package tr.edu.metu.ii.sm.dp.shopping;
 
+/** concrete observer */
 public class GoldenCustomer implements Observer {
 
 	@Override

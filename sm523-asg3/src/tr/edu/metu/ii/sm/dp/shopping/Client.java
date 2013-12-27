@@ -2,6 +2,7 @@ package tr.edu.metu.ii.sm.dp.shopping;
 
 import java.util.Random;
 
+/** client */
 public class Client {
 	
 	private static final int THRESHOLD = 10;

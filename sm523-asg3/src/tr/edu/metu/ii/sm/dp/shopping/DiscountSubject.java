@@ -3,10 +3,9 @@ package tr.edu.metu.ii.sm.dp.shopping;
 import java.util.ArrayList;
 import java.util.List;
 
-
-//Concrete Subject
+/** concrete subject */
 public class DiscountSubject implements Subject {
-	
+
 	private List<Observer> observers = new ArrayList<>();
 	private boolean available;
 
@@ -36,7 +35,7 @@ public class DiscountSubject implements Subject {
 
 	public void setAvailable(boolean available) {
 		this.available = available;
-		if(available) {
+		if (available) {
 			notifyObservers();
 		}
 	}
