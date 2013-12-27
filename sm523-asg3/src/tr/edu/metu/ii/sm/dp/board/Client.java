@@ -10,6 +10,14 @@ public class Client {
 		player.setCommand(command);
 		player.performActionWrittenOnCard();
 		
+		command = new MoveToJailCommand(icon);
+		player.setCommand(command);
+		player.performActionWrittenOnCard();
+		
+		command = new MoveForwardCommand(icon, 2);
+		player.setCommand(command);
+		player.performActionWrittenOnCard();
+		
 	}
 
 }

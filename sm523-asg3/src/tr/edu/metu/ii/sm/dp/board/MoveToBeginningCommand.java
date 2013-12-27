@@ -3,6 +3,8 @@ package tr.edu.metu.ii.sm.dp.board;
 //Concrete Command
 public class MoveToBeginningCommand implements Command {
 
+	private static final int STARTING_LOCATION = 0;
+	
 	private Icon icon;
 	
 	public MoveToBeginningCommand(Icon icon) {
@@ -11,7 +13,7 @@ public class MoveToBeginningCommand implements Command {
 
 	@Override
 	public void execute() {
-		icon.setLocation(0);
+		icon.setLocation(STARTING_LOCATION);
 
 	}
 
