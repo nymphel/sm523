@@ -8,7 +8,7 @@ public abstract class Recorder {
 		if(successor != null) {
 			successor.record(text);
 		} else {
-			System.out.println("unable to find correct logger");
+			System.out.println("Unable to find correct recorder!");
 		}
 	}
 	
