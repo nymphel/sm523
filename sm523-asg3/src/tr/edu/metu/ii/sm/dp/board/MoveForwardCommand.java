@@ -17,6 +17,9 @@ public class MoveForwardCommand implements Command {
 		location += steps;
 		
 		icon.setLocation(location);
+		
+		System.out.println("MoveForwardCommand is executed...");
+		icon.printLocation();
 
 	}
 

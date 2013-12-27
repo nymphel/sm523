@@ -13,4 +13,8 @@ public class Icon {
 		this.location = location;
 	}
 	
+	public void printLocation() {
+		System.out.println("icon location is: " + location);
+	}
+	
 }

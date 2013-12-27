@@ -14,6 +14,9 @@ public class MoveToBeginningCommand implements Command {
 	@Override
 	public void execute() {
 		icon.setLocation(STARTING_LOCATION);
+		
+		System.out.println("MoveToBeginningCommand is executed...");
+		icon.printLocation();
 
 	}
 
