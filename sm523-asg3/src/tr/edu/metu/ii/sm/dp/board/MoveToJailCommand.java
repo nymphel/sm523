@@ -1,6 +1,6 @@
 package tr.edu.metu.ii.sm.dp.board;
 
-//Concrete Command
+/** concrete command */
 public class MoveToJailCommand implements Command {
 	
 	private static final int JAIL_LOCATION = 33;

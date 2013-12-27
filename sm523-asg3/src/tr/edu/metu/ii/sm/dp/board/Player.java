@@ -1,6 +1,6 @@
 package tr.edu.metu.ii.sm.dp.board;
 
-//Invoker
+/** invoker */
 public class Player {
 	
 	private Command command;

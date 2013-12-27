@@ -1,6 +1,6 @@
 package tr.edu.metu.ii.sm.dp.board;
 
-//Receiver
+/** receiver */
 public class Icon {
 	
 	private int location;

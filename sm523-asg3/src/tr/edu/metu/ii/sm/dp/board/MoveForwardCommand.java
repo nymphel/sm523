@@ -1,6 +1,6 @@
 package tr.edu.metu.ii.sm.dp.board;
 
-//Concrete Command
+/** concrete command */
 public class MoveForwardCommand implements Command {
 	
 	private Icon icon;

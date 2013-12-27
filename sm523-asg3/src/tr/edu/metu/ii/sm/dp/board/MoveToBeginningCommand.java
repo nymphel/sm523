@@ -1,6 +1,6 @@
 package tr.edu.metu.ii.sm.dp.board;
 
-//Concrete Command
+/** concrete command */
 public class MoveToBeginningCommand implements Command {
 
 	private static final int STARTING_LOCATION = 0;

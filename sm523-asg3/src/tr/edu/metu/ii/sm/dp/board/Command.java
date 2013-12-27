@@ -1,6 +1,6 @@
 package tr.edu.metu.ii.sm.dp.board;
 
-//Command
+/** command */
 public interface Command {
 	
 	public void execute();

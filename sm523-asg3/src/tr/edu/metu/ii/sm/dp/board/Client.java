@@ -2,6 +2,7 @@ package tr.edu.metu.ii.sm.dp.board;
 
 import java.util.Random;
 
+/** client */
 public class Client {
 
 	public static void main(String[] args) {
