@@ -1,9 +1,11 @@
 package tr.edu.metu.ii.sm.dp.board;
 
 /** command */
-public interface Command {
+public abstract class Command {
 	
-	public void execute();
-	public void undo();
+	protected Icon icon;
+	
+	public abstract void execute();
+	public abstract void undo();
 	
 }

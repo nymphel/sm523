@@ -1,9 +1,8 @@
 package tr.edu.metu.ii.sm.dp.board;
 
 /** concrete command */
-public class MoveForwardCommand implements Command {
+public class MoveForwardCommand extends Command {
 	
-	private Icon icon;
 	private int steps;
 	private int previousLocation;
 	

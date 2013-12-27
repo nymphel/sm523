@@ -1,11 +1,10 @@
 package tr.edu.metu.ii.sm.dp.board;
 
 /** concrete command */
-public class MoveToBeginningCommand implements Command {
+public class MoveToBeginningCommand extends Command {
 
 	private static final int STARTING_LOCATION = 0;
 	
-	private Icon icon;
 	private int previousLocation;
 	
 	public MoveToBeginningCommand(Icon icon) {

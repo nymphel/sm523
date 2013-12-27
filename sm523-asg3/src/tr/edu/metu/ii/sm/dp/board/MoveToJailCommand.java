@@ -1,11 +1,10 @@
 package tr.edu.metu.ii.sm.dp.board;
 
 /** concrete command */
-public class MoveToJailCommand implements Command {
+public class MoveToJailCommand extends Command {
 	
 	private static final int JAIL_LOCATION = 33;
-
-	private Icon icon;
+	
 	private int previousLocation;
 	
 	public MoveToJailCommand(Icon icon) {
