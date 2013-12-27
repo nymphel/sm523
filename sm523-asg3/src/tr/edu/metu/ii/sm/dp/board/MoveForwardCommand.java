@@ -5,6 +5,7 @@ public class MoveForwardCommand implements Command {
 	
 	private Icon icon;
 	private int steps;
+	private int previousLocation;
 	
 	public MoveForwardCommand(Icon icon, int steps) {
 		this.icon = icon;
@@ -13,6 +14,8 @@ public class MoveForwardCommand implements Command {
 
 	@Override
 	public void execute() {
+		previousLocation = icon.getLocation();
+		
 		int location = icon.getLocation();
 		location += steps;
 		
@@ -21,6 +24,13 @@ public class MoveForwardCommand implements Command {
 		System.out.println("MoveForwardCommand is executed...");
 		icon.printLocation();
 
+	}
+
+	@Override
+	public void undo() {
+		icon.setLocation(previousLocation);
+		System.out.println("MoveForwardCommand is undone...");
+		icon.printLocation();
 	}
 
 }

@@ -33,6 +33,8 @@ public class Client {
 		player.setCommand(command);
 		player.performActionWrittenOnCard();
 		
+		command.undo();
+		
 		playerMoves(icon);
 		
 		command = new MoveForwardCommand(icon, 2);
@@ -52,6 +54,7 @@ public class Client {
 		location+= roll;
 		icon.setLocation(location);
 		
+		System.out.println("Player moves by rolling dice: "+roll);
 		icon.printLocation();
 	}
 

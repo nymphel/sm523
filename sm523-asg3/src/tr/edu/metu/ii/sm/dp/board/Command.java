@@ -4,5 +4,6 @@ package tr.edu.metu.ii.sm.dp.board;
 public interface Command {
 	
 	public void execute();
-
+	public void undo();
+	
 }
