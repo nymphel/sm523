@@ -3,9 +3,15 @@ package tr.edu.metu.ii.sm.dp.board;
 //Concrete Command
 public class MoveToBeginningCommand implements Command {
 
+	private Icon icon;
+	
+	public MoveToBeginningCommand(Icon icon) {
+		this.icon = icon;
+	}
+
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
+		icon.setLocation(0);
 
 	}
 
