@@ -1,5 +1,6 @@
 package tr.edu.metu.ii.sm.dp.exception;
 
+/** concrete handler */
 public class SqlServerRecorder extends Recorder {
 
 	public SqlServerRecorder(Recorder successor) {

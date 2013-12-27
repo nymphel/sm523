@@ -1,5 +1,6 @@
 package tr.edu.metu.ii.sm.dp.exception;
 
+/** concrete handler */
 public class EventLogRecorder extends Recorder {
 
 	public EventLogRecorder(Recorder successor) {

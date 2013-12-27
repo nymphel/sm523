@@ -1,5 +1,6 @@
 package tr.edu.metu.ii.sm.dp.exception;
 
+/** client */
 public class Client {
 
 	public static void main(String[] args) {

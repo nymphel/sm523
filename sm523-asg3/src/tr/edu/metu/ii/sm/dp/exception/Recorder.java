@@ -1,5 +1,6 @@
 package tr.edu.metu.ii.sm.dp.exception;
 
+/** handler */
 public abstract class Recorder {
 	
 	private Recorder successor;

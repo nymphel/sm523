@@ -1,5 +1,6 @@
 package tr.edu.metu.ii.sm.dp.exception;
 
+/** concrete handler */
 public class TextFileRecorder extends Recorder {
 
 	public TextFileRecorder(Recorder successor) {
