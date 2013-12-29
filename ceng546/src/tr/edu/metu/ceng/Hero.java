@@ -28,5 +28,14 @@ public class Hero extends Entity {
 		getOpponent().setHealth(opponentHealth);
 		
 	}
+	
+	public void pickupWeapon(Weapon drop) {
+		if(weapon.getDamage() <= drop.getDamage()) {
+			System.out.println("Hero choses to pick up the new weapon.");
+			this.weapon = drop;
+		} else {
+			System.out.println("Hero choses to preserve his weapon.");
+		}
+	}
 
 }
