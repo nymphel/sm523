@@ -36,6 +36,7 @@ public class Hero extends Entity {
 		} else {
 			System.out.println("Hero choses to preserve his weapon.");
 		}
+		System.out.println("\n");
 	}
 
 }
