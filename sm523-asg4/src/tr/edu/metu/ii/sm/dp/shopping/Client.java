@@ -3,6 +3,7 @@ package tr.edu.metu.ii.sm.dp.shopping;
 import java.util.ArrayList;
 import java.util.List;
 
+//Client
 public class Client {
 
 	public static void main(String[] args) {

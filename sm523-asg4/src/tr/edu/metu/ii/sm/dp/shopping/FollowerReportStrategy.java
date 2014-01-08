@@ -2,6 +2,7 @@ package tr.edu.metu.ii.sm.dp.shopping;
 
 import java.util.List;
 
+//Concrete Strategy
 public class FollowerReportStrategy implements ReportStrategy {
 
 	@Override

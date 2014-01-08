@@ -2,6 +2,7 @@ package tr.edu.metu.ii.sm.dp.shopping;
 
 import java.util.List;
 
+//Context
 public class ReportContext implements ReportStrategy {
 	
 	private ReportStrategy reportStrategy;
