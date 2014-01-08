@@ -1,5 +1,6 @@
 package tr.edu.metu.ii.sm.dp.testing;
 
+//Abstract Template
 public abstract class TestBehaviour {
 	
 	public void runTest() {

@@ -1,8 +1,9 @@
 package tr.edu.metu.ii.sm.dp.testing;
 
+//Concrete Template
 public class FileTestBehaviour extends TestBehaviour {
 
-	MyFile file;
+	private MyFile file;
 
 	@Override
 	public void setupScene() {

@@ -2,6 +2,7 @@ package tr.edu.metu.ii.sm.dp.testing;
 
 import java.util.Stack;
 
+//Concrete Template
 public class StackTestBehaviour extends TestBehaviour {
 
 	private String element = "Z";
