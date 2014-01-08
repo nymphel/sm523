@@ -1,5 +1,7 @@
 package tr.edu.metu.ii.sm.dp.student;
 
+import java.util.List;
+
 //Context 
 public class StudentContext {
 
@@ -34,6 +36,12 @@ public class StudentContext {
 	}
 
 	public void setStudentState(StudentState studentState) {
+		System.out.println("::: Setting a new state: "+ studentState.getClass().getSimpleName());
+		
+		if (this.studentState != null) {
+			List<Course> keptCourses = this.studentState.getCourses();
+			studentState.getCourses().addAll(keptCourses);
+		}
 		this.studentState = studentState;
 	}
 
