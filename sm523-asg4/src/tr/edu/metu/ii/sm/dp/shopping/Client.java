@@ -1,48 +1,46 @@
 package tr.edu.metu.ii.sm.dp.shopping;
 
-import java.util.Random;
+import java.util.ArrayList;
+import java.util.List;
 
-/** client */
 public class Client {
-	
-	private static final int THRESHOLD = 10;
-	private static final int RANGE_MAX = 101;
 
 	public static void main(String[] args) {
+		
+		List<Product> products = getProducts();
+		
+		ReportContext context = new ReportContext();
+		
+		context.setReportStrategy(new CostReportStrategy());
+		context.showReport(products);
+		
+		context.setReportStrategy(new FollowerReportStrategy());
+		context.showReport(products);
+		
+		context.setReportStrategy(new NegativeCommentReportStrategy());
+		context.showReport(products);
+		
+	}
 
-		Observer goldenCustomer = new GoldenCustomer();
-		Observer goldenCustomer2 = new GoldenCustomer();
+	private static List<Product> getProducts() {
+		Product p1 = new Product();
+		p1.setName("ASUS ROG G750JW–DB71, 17.3");
+		p1.setCost(1399);
+		p1.getFollowers().add("Edward Norton");
+		p1.getFollowers().add("Liam Neeson");
 		
-		Observer silverCustomer = new SilverCustomer();
-		Observer silverCustomer2 = new SilverCustomer();
-		Observer silverCustomer3 = new SilverCustomer();
-		Observer directorOfSales = new DirectorOfSales();
-		Observer directorOfMarketing = new DirectorOfMarketing();
-
-		DiscountSubject discountSubjectForRange = new DiscountSubject();
-		discountSubjectForRange.register(goldenCustomer);
-		discountSubjectForRange.register(goldenCustomer2);
+		Product p2 = new Product();
+		p2.setName("Dell Inspiron 14R-5421 Factory RB, 14");
+		p2.setCost(599);
+		p2.getNegativeComments().add("Overheating problem!");
+		p2.getNegativeComments().add("Keypad is not comfortable.");
+		p2.getNegativeComments().add("Battery does not last long.");
 		
-		DiscountSubject discountSubjectForCritical = new DiscountSubject();
-		discountSubjectForCritical.register(silverCustomer);
-		discountSubjectForCritical.register(silverCustomer2);
-		discountSubjectForCritical.register(silverCustomer3);
-		discountSubjectForCritical.register(directorOfSales);
-		discountSubjectForCritical.register(directorOfMarketing);
+		List<Product> products = new ArrayList<>();
+		products.add(p1);
+		products.add(p2);
 		
-		Integer[] stocks = {9,9,9,9,9,9,9,10,15,25,40,75,100,200,350};
-		int idx = new Random().nextInt(stocks.length);
-		int stock = (stocks[idx]);
-		System.out.println("stock is: " +stock);
-		
-		if(stock < THRESHOLD) {
-			discountSubjectForCritical.setAvailable(true);
-			discountSubjectForRange.setAvailable(false);
-		} else if(THRESHOLD <= stock && stock < RANGE_MAX) {
-			discountSubjectForCritical.setAvailable(false);
-			discountSubjectForRange.setAvailable(true);
-		}
-
+		return products;
 	}
 
 }
