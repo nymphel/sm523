@@ -12,7 +12,7 @@ public class NegativeCommentReportStrategy implements ReportStrategy {
 			System.out.println("Product name: "+ product.getName());
 			List<String> negativeComments = product.getNegativeComments();
 			if(negativeComments.isEmpty()) {
-				System.out.println("This product has no negative comments!");
+				System.out.println("This product has no negative comments...");
 			} else {
 				System.out.println("List of negative comments: ");
 				for (String negativeComment : negativeComments) {

@@ -34,8 +34,8 @@ public class Client {
 		p2.setName("Dell Inspiron 14R-5421 Factory RB, 14");
 		p2.setCost(599);
 		p2.getNegativeComments().add("Overheating problem!");
-		p2.getNegativeComments().add("Keypad is not comfortable.");
-		p2.getNegativeComments().add("Battery does not last long.");
+		p2.getNegativeComments().add("Keypad is not comfortable!");
+		p2.getNegativeComments().add("Battery does not last long!");
 		
 		List<Product> products = new ArrayList<>();
 		products.add(p1);

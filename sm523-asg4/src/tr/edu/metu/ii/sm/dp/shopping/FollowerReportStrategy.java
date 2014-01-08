@@ -12,7 +12,7 @@ public class FollowerReportStrategy implements ReportStrategy {
 			System.out.println("Product name: "+ product.getName());
 			List<String> followers = product.getFollowers();
 			if(followers.isEmpty()) {
-				System.out.println("This product has no followers!");
+				System.out.println("This product has no followers...");
 			} else {
 				System.out.println("List of followers: ");
 				for (String follower : followers) {
