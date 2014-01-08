@@ -18,6 +18,7 @@ public class StackTestBehaviour extends TestBehaviour {
 	@Override
 	public void test() {
 		String result = stack.pop();
+		System.out.println(element + " is popped from stack");
 		assert (result.equals(element));
 
 	}
